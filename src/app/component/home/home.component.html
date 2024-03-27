@@ -1,0 +1,35 @@
+<div class="container">
+    <!-- Concern Name -->
+    <div class="select-wrapper">
+        <select class="size" [(ngModel)]="selectedConcern">
+          <option Label="Enter Concern Name" Value="0"></option>
+          <option Label="Navana Limited" Value="NL"></option>
+          <option Label="Navana Real State" Value="NRL"></option>
+          <option Label="Navana CNG" Value="NC"></option>
+      </select>
+    </div>
+
+    <!-- Branch Name -->
+    <div class="select-wrapper">
+        <select class="size" [(ngModel)]="selectedBranch">
+          <option Label="Enter Branch Name" Value="0"></option>
+          <option Label="3S" Value="3S"></option>
+          <option Label="2S" Value="2S"></option>
+      </select>
+    </div>
+
+    <!-- User Roll -->
+    <div class="select-wrapper">
+        <select class="size" [(ngModel)]="selectedUserRoll">
+          <option Label="Enter Your User Roll" Value="0"></option>
+          <option Label="Supper Admin" Value="SA"></option>
+          <option Label="Admin" Value="A"></option>
+          <option Label="User" Value="U"></option>
+      </select>
+    </div>
+
+    <!-- OK Button -->
+    <div class="select-wrapper">
+        <button class="size" (click)="captureValues()">OK</button>
+    </div>
+</div>
